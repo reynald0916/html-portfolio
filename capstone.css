@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 5px solid black;
+}
+
+img{
+  font-weight: 10;
+  height: 500px;
+}
+
+.cloudmountain-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.angela-profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+    border: 2px solid rgb(115, 253, 253);
+    border-right: 10px solid rgb(24, 117, 117);
+}
+
+header {
+    text-align: center;
+}
+
+.about, .skills, .hot-wings {
+    background-color: #ffffff;
+    color: rgb(19, 150, 150);
+    text-shadow: 10px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+     border: 5px solid rgb(48, 148, 148);
+}
+
+.hot-wings{
+    background-color: rgb(255, 255, 255);
+}
+
+.skills > img{
+    
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+h2{
+    font-style: oblique;
+}
+
+ #ak{
+    color:  rgb(255, 255, 255);;
+}
+
+.hot-wings{
+    display: grid;
+    grid-template-columns: repeat(5, span 5);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.hot-wings > img{
+    height: 300px;
+    grid-template-columns: repeat(5,span 10);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+
+.hot-wings > .beer{
+    border-top: 10px solid rgb(255, 255, 255);
+    
+}
+
+#hino{
+    color: black;
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+.skills > .para{
+    color: rgb(19, 97, 97);
+    font-size: xx-large;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid rgb(40, 158, 158);
+}
+
+p{
+    color: black;
+    font-size: x-large;
+    font-style:italic;
+}
