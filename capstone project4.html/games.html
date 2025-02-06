@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guessing Game</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+.game-container {
+width: 80%;
+margin: 40px auto;
+text-align: center;
+}
+.game-container h1 {
+font-size: 36px;
+}
+.game-container p {
+font-size: 24px;
+}
+.input-field {
+width: 50%;
+height: 40px;
+font-size: 24px;
+padding: 10px;
+}
+.button {
+width: 20%;
+height: 40px;
+font-size: 24px;
+background-color: #4CAF50;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.button:hover {
+background-color: #3e8e41;
+}
+.result {
+font-size: 36px;
+color: #666;
+}
+</style>
+</head>
+<body>
+<div class="game-container">
+<h1>Guessing Game</h1>
+<p>Humula ng isang random na numero sa pagitan ng 1 at 100.</p>
+<input type="number" id="guess" class="input-field">
+<button class="button" onclick="checkGuess()">Guess</button>
+<p class="result" id="result"></p>
+</div>
+
+<script>
+let numberToGuess = Math.floor(Math.random() * 100) + 1;
+let guessCount = 0;
+
+function checkGuess() {
+let guess = document.getElementById("guess").value;
+guessCount++;
+
+if (guess < numberToGuess) {
+document.getElementById("result").innerHTML = `ikw ay matalino at mabait po.`;
+} else if (guess > numberToGuess) { 
+document.getElementById("result").innerHTML = `Ang iyong hula ay mataas sa numero. Subukang muli!`;
+} else { 
+document.getElementById("result").innerHTML = `Kumusta! Ang iyong hula ay tama! Ginamit mo ${guessCount} beses.`;
+}
+}
+</script>
+</body>
+</html>

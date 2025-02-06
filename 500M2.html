@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian painting kuno!</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns:320px 198px 153px 50px ;
+      grid-template-rows:414px 130px 155px 20px;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      background-color: rgb(0, 0, 0);
+    }
+    .item-red {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-color: red;
+    }
+    .item-white1{
+      grid-column: 2/5;
+      grid-row: 1/2;
+      background-color: #F0F1EC;
+    }
+    .item-white2{
+      grid-column: 1/2;
+      grid-row: 2/4;
+      background-color: #F0F1EC;
+    }
+    .item-white3{
+      grid-column: 2/4;
+      grid-row: 2/4;
+      background-color: #F0F1EC;
+    }
+    .item-blue{
+      grid-column: 4/5;
+      grid-row: 2/3;
+      border-bottom: 10px solid black;
+      background-color:blue;
+      
+    }
+    .item-white4{
+      grid-column: 4/5;
+      grid-row: 3/5;
+      background-color: #F0F1EC;
+    }
+    .item{
+      grid-column: 1/2;
+      grid-row: 4/5;
+      background-color: #F0F1EC;
+    }
+    .yellow1{
+      grid-column: 2/3;
+      grid-row: 4/5;
+      background-color: yellow;
+    }
+    .black{
+      grid-column: 3/4;
+      grid-row: 4/5;
+      background-color: #1d1e1f;
+    }
+
+   div{
+    color: rgb(0, 0, 0);
+   }
+
+  </style>
+
+</head>
+<body>
+  <h1>500 MILLION PAINT</h1> 
+  <div class="container">
+  <div class="item-red">1</div>
+  <div class="item-white1">2</div>
+  <div class="item-white2">3</div>
+  <div class="item-white3">4</div>
+
+  <div class="item-blue">5</div>
+  <div class="item-white4">6</div>
+
+  <div class="item">7</div>
+  <div class="yellow1">8</div>
+  <div class="black">9</div>
+</div>
+</body>
